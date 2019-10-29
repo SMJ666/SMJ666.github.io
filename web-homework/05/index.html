@@ -31,14 +31,12 @@
 				width: 120px;
 				float: left;
 				border: solid;
-				border-color: darkgray;
+				border-color: #F1F1F1;
 			}
 			#s{
 				float: right;
 				display: inline-block;
 				margin-bottom: 10px;
-			}
-			#zuo{
 			}
 			body{
 				background-color: #f6f6f6;
@@ -61,7 +59,7 @@
 				margin: 0 auto;
 				position: relative;
 			}*/
-			.clearfix:before{
+			.clearfix:after{
 				content:"";
 				display:block;
 				clear:both;
@@ -79,6 +77,12 @@
                 padding: 8px 16px;
                 text-decoration: none;
             }
+            .b li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
             li{
             	list-style: none;
             }
@@ -89,16 +93,28 @@
             	position: 1;
             }
             .middle{
-            	float: left;
+                position: relative;
+                left: 126px;
             	display: block;
+            	width: 500px;
+            	border: solid;
+            	border-color: #DCDCDC;
             }
             .current{
-            	width:100px;
             	padding-top: 10px;
             	padding-bottom: 10px;
             	display: block;
             	text-align: center;
             	width: 200px;
+            }
+            .aa{
+            	border-bottom-color: #DCDCDC;
+            }
+            .bb a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
             }
 		</style>
 	</head>
@@ -167,8 +183,32 @@
 	        	</div>
 	        	<div class="clearfix"></div>
 	            <div class="middle">
-	            	
+	            	<div class="aa">
+	            		<font face="微软雅黑">书法</font>
+	            	</div>
+	            	<div class="clearfix"></div>
+	            	<div class="bb">
+	            		<a href="https://baike.so.com/doc/2397670-2535119.html">楷书</a>
+	            		<table style="border: solid; border-color: black; ">
+	            			<tr>
+	            				<th class="b"><a href="https://baike.so.com/doc/2397670-2535119.html"></a></th>
+	            				<th>行书</th>
+	            				<th>草书</th>
+	            			</tr>
+	            			<tr>
+	            				<th></th>
+	            				<th></th>
+	            				<th></th>
+	            			</tr>
+	            			<tr>
+	            				<th></th>
+	            				<th></th>
+	            				<th></th>
+	            			</tr>
+	            		</table>
+	            	</div>
 	            </div>
+	            <div class="clearfix"></div>
 	   	        <div class="you">
 	     	    </div>
 	       </div>
