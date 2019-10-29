@@ -5,52 +5,40 @@
 		<title>我的爱好</title>
 		<meta content="calligraph" />
 		<style>
-			#a{
-				background-color: #f6f6f6;
-			}
-			a:link{
-				text-decoration: none;
-				color: white;
-			}
-			a:visited{
-				color: cornsilk;
-			}
-			.nav li{
-				list-style: none;
-				float: left;
-				display: inline-block;
-				align-content: center;
-			}
-			.nav li a hover{
-				list-style: none;
-				float: left;
-				color: #96B57D;
-			} 
-			ul{
+			.a ul{
 				list-style-type: none;
                 margin: 0;
                 padding: 0;
-                display: inline-block;
-                width: 794px;
-                line-height: 1.5em
+                height: 100px;
+                line-height: 100px;
 			}
-			li{
+			.a a:link{
+				text-decoration: none;
+				color: white;
+			}
+			.a a:visited{
+				color: cornsilk;
+			}
+			.a li a{
 				float:left;
 				width: 80px;
 				color: white;
 				background-color: #96b97d;
+				list-style: none;
+				line-height: 20px;
 			}
 			.zuo{
-				width: 160px;
+				width: 120px;
 				float: left;
 				border: solid;
 				border-color: darkgray;
 			}
 			#s{
 				float: right;
+				display: inline-block;
+				margin-bottom: 10px;
 			}
 			#zuo{
-				float: left;
 			}
 			body{
 				background-color: #f6f6f6;
@@ -62,60 +50,126 @@
 				margin: 0 auto;
 				padding: 8px;
 			}
+			.framework{
+				border: solid;
+				border-color: gainsboro;
+				margin: 0 auto;
+			}
+			/*.framework1{
+				border: solid;
+				border-color: gainsboro;
+				margin: 0 auto;
+				position: relative;
+			}*/
+			.clearfix:before{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			.b ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 160px;
+                background-color: #f1f1f1;
+            }
+            .b li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+            li{
+            	list-style: none;
+            }
+            *div{
+            	background-color: #f6f61;
+            }
+            ul{
+            	position: 1;
+            }
+            .middle{
+            	float: left;
+            	display: block;
+            }
+            .current{
+            	width:100px;
+            	padding-top: 10px;
+            	padding-bottom: 10px;
+            	display: block;
+            	text-align: center;
+            	width: 200px;
+            }
 		</style>
 	</head>
 	<body>
 		<div class="frame">
 			<div class="search">
-		    	<div class="search engine">
+		    	<div class="engine">
 		  		<br />
 		  		<br />
 		  		<br />
-		    		<input class="placeholder" id="s" name="s" placeholder="搜索......" autocomplete="off" height="100px"/>
+		    		<input class="search" id="s" placeholder="搜索......" autocomplete="off" style="width: 280px; height: 40px;"/>
 		    	</div>
 	    	</div>
 	    	<div class="logo">
 	    		<a href="http://www.shu-fa.net/"><img src="img/logo.jpg"/></a>
 	    	</div>
-	    	<div>
-	    		<ul id="a">
+	    	<div class="framework1">
+	    		<ul class="a">
 			    	<li>
 			    		<a href="第五次" title="我的爱好" class="current">首页</a>
 			    	</li>
 		    		<li>
-    	    			<a href="http://www.yac8.com/" >诗歌</a>
+    	    			<a href="http://www.yac8.com/" class="current">诗歌</a>
 		      		</li>
 		     		<li>
-	    				<a href="https://baike.so.com/doc/1472591-1557044.html" >硬笔书法</a>
+	    				<a href="https://baike.so.com/doc/1472591-1557044.html" class="current">硬笔书法</a>
 	    			</li>
 	    			<li>
-		     			<a href="https://baike.so.com/doc/6777553-6993439.html" >毛笔书法</a>
+		     			<a href="https://baike.so.com/doc/6777553-6993439.html" class="current">毛笔书法</a>
 		    		</li>
 		    		<li>
-		    			<a href="https://baike.so.com/doc/5338540-5573981.html" >国画</a>
+		    			<a href="https://baike.so.com/doc/5338540-5573981.html" class="current">国画</a>
 	    			</li>
 		    		<li>
-	    				<a href="https://baike.so.com/doc/1920874-2032274.html" >篆刻</a>
+	    				<a href="https://baike.so.com/doc/1920874-2032274.html" class="current">篆刻</a>
 	    			</li>
 	    			<li>
-	    				<a href="http://www.shxw.com/" >原网页</a>
+	    				<a href="原网页.html" class="current">原网页</a>
 	    			</li>
 	    		</ul>
 	     		<br />
 	     	</div>
-	    <div class="framework">
-	    	<div class="zuo">
-		        	<a href="https://baike.so.com/doc/4014907-4212028.html">书法发展史</a>
-		        	<a href=""></a>
-		        	<a href=""></a>
-		        	<a href=""></a>
-		        	<a href=""></a>
-		        	<a href=""></a>
-		        	<a href=""></a>
-	    	    </div>
-	    	    <div class="middle">
-	    	    </div>
-	    	    <div class="you">
+	     	<br />
+	        <div class="framework">
+	        	<div class="zuo">
+	        		<ul class="b">
+		            	<li >
+		            		<a href="https://baike.so.com/doc/4014907-4212028.html">书法发展史</a>
+		            	</li>
+		            	<li>
+		            		<a href="https://baike.so.com/doc/2397670-2535119.html">楷书</a>
+		            	</li>
+		            	<li>
+		            		<a href="">隶书</a>
+		            	</li>
+		            	<li>
+		            		<a href="">篆书</a>
+		            	</li>
+		            	<li>
+		            		<a href="https://baike.so.com/doc/2318316-2452228.html">行书</a>
+		            	</li>
+		            	<li>
+		             		<a href="">草书</a>
+		            	</li>
+		           	</ul>
+	        	</div>
+	        	<div class="clearfix"></div>
+	            <div class="middle">
+	            	
+	            </div>
+	   	        <div class="you">
 	     	    </div>
 	       </div>
 		</div>
