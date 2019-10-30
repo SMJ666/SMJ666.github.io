@@ -10,7 +10,7 @@
                 margin: 0;
                 padding: 0;
                 height: 100px;
-                line-height: 100px;
+                width: 60px;
 			}
 			.a a:link{
 				text-decoration: none;
@@ -27,11 +27,15 @@
 				list-style: none;
 				line-height: 20px;
 			}
+			#bb{
+				color: #96B97D;
+			}
 			.zuo{
 				width: 120px;
 				float: left;
 				border: solid;
 				border-color: #F1F1F1;
+				margin-right: 6px;
 			}
 			#s{
 				float: right;
@@ -52,17 +56,15 @@
 				border: solid;
 				border-color: gainsboro;
 				margin: 0 auto;
+				height: 277px;
 			}
-			/*.framework1{
-				border: solid;
-				border-color: gainsboro;
-				margin: 0 auto;
-				position: relative;
-			}*/
-			.clearfix:after{
+			.clearfix:before{
 				content:"";
 				display:block;
-				clear:both;
+				clear: right;
+			}
+			ul{
+				padding: 0;
 			}
 			.b ul {
                 list-style-type: none;
@@ -86,19 +88,26 @@
             li{
             	list-style: none;
             }
-            *div{
-            	background-color: #f6f61;
+            nav a{
+            	list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 160px;
+                background-color: #f1f1f1;
+                color: #96B97D;
             }
-            ul{
-            	position: 1;
+            nav a:link{
+            	text-decoration: none;
+            }
+            nav a:hover{
+            	background-color: #f6fff6;;
             }
             .middle{
-                position: relative;
-                left: 126px;
-            	display: block;
-            	width: 500px;
+            	display: inline-block;
+            	width: 663px;
             	border: solid;
-            	border-color: #DCDCDC;
+            	border-color: #F1F1F1;
+            	float: left;
             }
             .current{
             	padding-top: 10px;
@@ -115,6 +124,26 @@
                 color: #000;
                 padding: 8px 16px;
                 text-decoration: none;
+            }
+            .framework1{
+            	overflow: hidden;
+            }
+            .framework{
+            	overflow: hidden;
+            }
+            #a{
+                width: 140px;   
+                display: inline-block;    
+                text-align: center;          	
+            }
+            #d{
+                width: 200px;   
+                display: inline-block;    
+                text-align: center;          	
+            }
+            .xian{
+            	border-bottom: solid;
+            	border-color: #F1F1F1;
             }
 		</style>
 	</head>
@@ -154,6 +183,15 @@
 	    			<li>
 	    				<a href="原网页.html" class="current">原网页</a>
 	    			</li>
+	    			<li>
+			    		<a href="第五次" title="我的爱好" class="current" id="bb">首页</a>
+			    	</li>
+			    	<li>
+			    		<a href="第五次" title="我的爱好" class="current" id="bb">首页</a>
+			    	</li>
+			    	<li>
+			    		<a href="第五次" title="我的爱好" class="current" id="bb">首页</a>
+			    	</li>
 	    		</ul>
 	     		<br />
 	     	</div>
@@ -162,54 +200,68 @@
 	        	<div class="zuo">
 	        		<ul class="b">
 		            	<li >
-		            		<a href="https://baike.so.com/doc/4014907-4212028.html">书法发展史</a>
+		            		<a href="https://baike.so.com/doc/4014907-4212028.html" id="e">书法发展史</a>
 		            	</li>
 		            	<li>
-		            		<a href="https://baike.so.com/doc/2397670-2535119.html">楷书</a>
+		            		<a href="https://baike.so.com/doc/2397670-2535119.html" id="e">楷书</a>
 		            	</li>
 		            	<li>
-		            		<a href="">隶书</a>
+		            		<a href="https://baike.so.com/doc/5048504-5275511.html" id="e">隶书</a>
 		            	</li>
 		            	<li>
-		            		<a href="">篆书</a>
+		            		<a href="https://baike.so.com/doc/5253263-5486580.html" id="e">篆书</a>
 		            	</li>
 		            	<li>
-		            		<a href="https://baike.so.com/doc/2318316-2452228.html">行书</a>
+		            		<a href="https://baike.so.com/doc/2318316-2452228.html" id="e">行书</a>
 		            	</li>
 		            	<li>
-		             		<a href="">草书</a>
+		             		<a href="https://baike.so.com/doc/5411297-5649398.html" id="e">草书</a>
 		            	</li>
 		           	</ul>
 	        	</div>
 	        	<div class="clearfix"></div>
 	            <div class="middle">
-	            	<div class="aa">
-	            		<font face="微软雅黑">书法</font>
+	            	<div class="xian">
+	            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="微软雅黑">国画(依题材分类)</font>
 	            	</div>
 	            	<div class="clearfix"></div>
-	            	<div class="bb">
-	            		<a href="https://baike.so.com/doc/2397670-2535119.html">楷书</a>
-	            		<table style="border: solid; border-color: black; ">
-	            			<tr>
-	            				<th class="b"><a href="https://baike.so.com/doc/2397670-2535119.html"></a></th>
-	            				<th>行书</th>
-	            				<th>草书</th>
-	            			</tr>
-	            			<tr>
-	            				<th></th>
-	            				<th></th>
-	            				<th></th>
-	            			</tr>
-	            			<tr>
-	            				<th></th>
-	            				<th></th>
-	            				<th></th>
-	            			</tr>
-	            		</table>
-	            	</div>
+		           	<nav class="cc">
+                        <a href="https://baike.so.com/doc/5338540-5573981.html" id="a">国画</a>
+                        <a href="https://baike.so.com/doc/6581313-6795081.html" id="a">人物画</a>
+                        <a href="https://baike.so.com/doc/1307548-1382456.html?from=183238&sid=1382456&redirect=search" id="a">山水画</a>
+                        <a href="https://baike.so.com/doc/5820722-6033538.html" id="a">花鸟画</a>
+                    </nav>
+                    <br />
+                    <div class="xian">
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="微软雅黑">国画(依技巧分类)</font>
+                    </div>
+                    <nav class="cc">
+                    	<a href="https://baike.so.com/doc/5338540-5573981.html" id="d">国画</a>
+                        <a href="https://baike.so.com/doc/5414152-5652294.html" id="d">工笔画</a>
+                        <a href="https://baike.so.com/doc/6510216-6723939.html" id="d">写意画</a>
+                    </nav>
+                    <br />
+                    <div class="xian">
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="微软雅黑">篆刻</font>
+                    </div>
+                    <nav class="cc">
+                    	<a href="https://baike.so.com/doc/1920874-2032274.html" id="d">篆刻</a>
+                        <a href="https://baike.so.com/doc/527074-557979.html" id="d">阴刻</a>
+                        <a href="https://baike.so.com/doc/527512-558457.html" id="d">阳刻</a>
+                    </nav>
+                    <br />
+                    
+                    <div class="xian">
+                    	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font face="微软雅黑">词</font>
+                    </div>
+                    <nav class="cc">
+                    	<a href="https://baike.so.com/doc/5385632-5622080.htmlhttps://baike.so.com/doc/5338540-5573981.html" id="d">宋词</a>
+                        <a href="https://baike.so.com/doc/5438868-5677188.html" id="d">豪放派</a>
+                        <a href="https://baike.so.com/doc/5445165-10460714.html" id="d">婉约派</a>
+                    </nav>
 	            </div>
 	            <div class="clearfix"></div>
-	   	        <div class="you">
+	            </div>
 	     	    </div>
 	       </div>
 		</div>
