@@ -23,22 +23,22 @@
 				border-color: coral;
 				margin: 0 auto;
 				background-color: khaki;
+				overflow: auto;
 			}
 		   	.one{
-				width: 410px;
+				width: 405px;
 				border: solid;
 				border-color: chocolate;
 				float: right;
 				padding-left: 5px;
 			}
 			.two{
-				width: 410px;
+				width: 405px;
 				border: solid;
 				border-color: chocolate;
 			}
 			
 			.noodles{		
-				border: dotted;
 				width: 265px;
 				border: dotted;
 				border-color: burlywood;
@@ -88,6 +88,11 @@
 				border: dotted;
 				border-color: burlywood;
 			}
+			/*.clearfix:before{
+				content: "";
+				display: block;
+				clear: both;
+			}*/
 		</style>
 	</head>
 	<body>
@@ -97,7 +102,7 @@
 		    		<div class="one" align="center">
 			            <div class="noodles">
 				            <h1  align="center">臊子面</h1>
-			    	        <img width="265px" src="img/7157162a9b5ded62020ca0e89cd615b7_69a826cf39ba0e75_3.jpg" id="noodles"/>
+			    	        <img width="265px" src="img/7157162a9b5ded62020ca0e89cd615b7_69a826cf39ba0e75_3.jpg" id="noodles" align="center"/>
 		   		            <p></p>
 		    	        </div>
 		        	    <div class="mianpi">
@@ -119,6 +124,7 @@
 	    	        		<br />
 	               	    </div>
 		    	    </div>
+		    	    <div class="clearfix"></div>
 		    	    <div class="two">
 			            <div class="douhuapao">
 			            	<h1 align="center" >豆花泡馍</h1>

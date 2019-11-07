@@ -3,8 +3,407 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<style>
+			/*.btn:link{
+				background-image: url(img/雪碧图.png);
+				display: block;
+				width: 49px;
+				height: 45px;
+				background-color: red;
+				background-position: 0 -327px;
+			}
+			.btn:hover{
+				background-position: -93px 0px;
+			}*/
+			a{
+				padding-left: 0px;
+			}
+			.s{
+				float: right;
+				display: block;
+				margin-right: 10px;
+				border-radius: 50px;
+			}
+			.b{
+				float: right;
+				display: block;
+				margin-bottom: 10px;
+				border-radius: 50px;
+			}
+			nav a:link{
+				background-color: #1479d7;
+				text-decoration: none;
+				float: left;
+				list-style-type: none;
+				color: #FFF;
+				display: block;
+				width: 51.7px;
+				line-height: 50px;
+			}
+			.home{
+				border-radius: 50px;
+				display: block;
+			}
+			.nav a:hover{
+				/*text-emphasis-color: #1479D7;*/
+				color: #e5ffff;
+				background-color: #1E90FF;
+			}
+			.nav a:visited{
+				color: white;
+			}
+			.nav a:link{
+				list-style-type:none;
+				display: block;
+				text-align: center;
+				color: white;
+			}
+			nav 
+			.d a:link{
+				text-decoration: none;
+				color: black;
+			}
+			.d h3 a:link{
+				text-decoration: none;
+				color: #000000;
+			}
+			.d h3 a:hover{
+				color: dodgerblue;
+			}
+			.d a:visited{
+				color: black;
+			}
+			li a:link{
+				text-decoration: none;
+				color: black;
+			}
+			li a:hover{
+				color: dodgerblue;
+			}
+			li a:visited{
+				color: #000000;
+			}
+			li a:active{
+				text-decoration: none;
+			}
+			li h6{
+				margin-left: 0px;
+			}
+			ul{
+				list-style-type:none;
+				padding-inline-start: 10px;
+			}
+			.menu a:link{
+				text-decoration: none;
+			}
+			.up ul li{
+                border-bottom: 1px solid #cae0f3;
+                overflow: hidden;
+			}
+			.up{
+				padding-left: 0px;
+				padding-top: 10px;
+				margin-top: 12px;
+			}
+			.frame{
+			    width: 880px;
+				border: none;
+				border-color: dodgerblue;
+				margin: 0 auto;
+				padding: 8px;
+			}
+			.clear:after{
+				content:"";
+				display:block;
+				clear: right;
+			}
+			.clearfix:after{
+				content:"";
+				display:block;
+				clear: left;
+			}
+			.zhong{
+				display: block;
+				background-color: beige;
+				width: 400px;
+			}
+			.left{
+				height: 23px;
+				line-height: 20px;
+				border-bottom:1px solid #cae0f3;
+				display: block;
+				background-color: #F5F5DC;
+				width: 282px;
+				height: 500px;
+				position: absolute;
+			}
+			.left{
+				height: 23px;
+				line-height: 20px;
+				border-bottom:1px solid #cae0f3;
+				display: block;
+				background-color: #F5F5DC;
+				width: 282px;
+				height: 500px;
+				position: absolute;
+			}
+			.zhong{
+				height: 23px;
+				line-height: 20px;
+				border-bottom:1px solid #cae0f3;
+				display: block;
+				background-color: #F5F5DC;
+				width: 282px;
+				height: 500px;
+				position: relative;
+				left: 298px;
+				padding-top: 2px;
+			}
+			.you{
+				height: 23px;
+				line-height: 20px;
+				border-bottom:1px solid #cae0f3;
+				display: block;
+				background-color: #F5F5DC;
+				width: 282px;
+				height: 500px;
+				position: relative;
+				left: 596px;
+				top: -516px;
+			}
+			.box1{
+				color: gainsboro;
+			}
+			.c{
+				float: left;
+			}
+			.clear1{
+				content:"";
+				display:block;
+				clear: left;
+			}
+			.clearb{
+				content:"";
+				display:block;
+				clear: both;
+			}
+			.logo{
+				margin-top: 30px;
+			}
+			.d{
+				margin-left: 10px;
+			}
+			.search{
+				padding: 22px;
+			}
+			.line{
+				margin-left: 0px;
+			}
+			#zuo{
+				float: left;
+			}
+			#you{
+				float: right;
+			}
+		</style>
 	</head>
 	<body>
-		
+		<div class="frame">
+			<div>
+				<img src="img/logo.jpg" class="logo"/><input class="s" style="width: 200px; height: 30px; border: initial #ccc!important;"/>
+				    <button class="b">酷狗搜索</button>
+	    	    <div class="clear"></div>
+			</div>
+			<br />
+			<div class="home">
+				<nav class="nav">
+					<a href="https://news.qq.com/"><li>新闻</li></a>
+					<a href="https://v.qq.com/"><li>视频</li></a>
+					<a href="https://new.qq.com/ch/photo/"><li>图片</li></a>
+					<a href="https://new.qq.com/ch/milite/"><li>军事</li></a>
+					<a href="https://sports.qq.com/"><li>体育</li></a>
+					<a href="https://sports.qq.com/nba/"><li>NBA</li></a>
+					<a href="https://new.qq.com/ch/ent/"><li>娱乐</li></a>
+					<a href="https://new.qq.com/ch/finance/"><li>财经</li></a>
+					<a href="https://new.qq.com/ch/tech/"><li>科技</li></a>
+					<a href="https://new.qq.com/ch/fashion/"><li>时尚</li></a>
+					<a href="https://auto.qq.com/"><li>汽车</li></a>
+					<a href="https://house.qq.com/"><li>房产</li></a>
+					<a href="https://new.qq.com/ch/edu/"><li>教育</li></a>
+					<a href="https://new.qq.com/ch/edu/"><li>文化</li></a>
+					<a href="https://new.qq.com/ch/games/"><li>游戏</li></a>
+					<a href="https://new.qq.com/ch/astro/"><li>星座</li></a>
+					<a href="https://www.qq.com/"><li>更多</li></a>
+				</nav>	   
+				<div>
+					<nav class="nav">
+					    <a class="" target="_blank">独家</a>
+				       	<a class="" target="_blank">热剧</a>
+				        <a class="" target="_blank">谷雨</a>
+				        <a class="" target="_blank">空间</a>
+				        <a class="" target="_blank">结婚</a>
+				    </nav>
+				</div>
+			</div>
+			<div class="ad">
+				<a href="https://news.qq.com/mobile/index.htm" target="_blank"><img src="img/左.jpg" width="566px" id="zuo"/></a>
+				<a href="https://www.qq.com/jubaoxuzhi.htm" target="_blank"><img src="img/右.jpg" width="294px" id="you"/></a>
+			</div>
+			<br />
+			<div class="clearfix"></div>
+			<br />
+			<br />
+			<div class="content">
+				<div class="zuo">
+					<div class="left">
+						<div class="d">
+					    	<h3>
+									<a href="https://news.qq.com/" target="_blank">要闻</a>&nbsp;&nbsp;&nbsp;&nbsp;<span class="box1">|</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://hn.qq.com/" target="_blank">湖南新闻</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&city=%E6%B9%98%E6%BD%AD%E5%B8%82" target="_blank" style="size: a3;">湘潭</a>
+					            <!--<img src="img/sun.jpg" class="c">-->
+					            <a href="https://tianqi.qq.com/?province=%E6%B9%96%E5%8D%97%E7%9C%81&city=%E6%B9%98%E6%BD%AD%E5%B8%82" target="_blank">18℃</a>
+			         		</h3>
+			         	</div>
+					    <div class="clear1"></div>
+					    <div class="topic">
+					    	<div class="clearb">
+					    		<ul >
+					    			<li class="1">
+					    				<a href="https://new.qq.com/rain/a/20191104A0IU8D00">副教授告动物园，"人脸识别第一案"揭露隐私问题</a>
+					    			</li>
+					    			<br />
+					    			<li class="2">
+					    				<a href="https://new.qq.com/omn/author/1209" target="_blank">瞭望</a>
+					    				<span class="box1">|</span>
+					    				<a href="https://new.qq.com/rain/a/20191104A07U4P00" target="_blank">“天价罚单”作用有限，救命药廉价药断供何解</a>
+					    			</li>
+					    			<br />
+					    			<li class="3">
+					    				<a href="https://new.qq.com/omn/author/9206757" target="_blank">光明时评</a>
+					    				<span class="box1">|</span>
+					    				<a href="“少年的你”，如何远离校园欺凌？" target="_blank">“少年的你”，如何远离校园欺凌？</a>
+					    			</li>
+					    			<br />
+					    			<li class="4">
+					    				<a href="https://new.qq.com/omn/author/5012907" target="_blank">新京报评论</a>
+					    				<span class="box1">|</span>
+					    				<a href="邀网红进驾驶舱自拍，愧为机长" target="_blank">邀网红进驾驶舱自拍，愧为机长</a>
+					    			</li>
+					    			<br />
+					    			<li class="5">
+					    				<a href="财看见" target="_blank">财看见</a>
+					    				<span class="box1">|</span>
+					    				<a href="https://new.qq.com/rain/a/20191104A0GVPW00" target="_blank">大话锤子：做手机8年 罗永浩成了“老赖”</a>
+					    			</li>
+					    			<br />
+					    			<li class="6">
+					    				<a href="https://new.qq.com/omn/author/5107513" target="_blank">较真</a>
+					    				<span class="box1">|</span>
+					    				<a href="https://new.qq.com/rain/a/20191104A04JP600" target="_blank">晒太阳，就能预防骨质疏松吗？</a>
+					    			</li>
+					    			<br />
+					    			<li class="7">
+					    				<a href="https://new.qq.com/omn/author/5503647" target="_blank">一枚石头</a>
+					    				<span class="box1">|</span>
+					    				<a href="https://new.qq.com/rain/a/20191104A0HA2J00" target="_blank">华黎明大使：为什么美国与伊朗会这么敌对？</a>
+					    			</li>
+					    		</ul>
+					    	</div>
+					    </div>
+					</div>
+				</div>
+				<div class="zhong">
+					<div class="d">
+						<h3>
+			    	        <a href="https://new.qq.com/omn/author/41" target="_blank">今日话题</a>
+			    	    </h3>
+			    	    <div class="middle">
+			    	    	<ul class="clearb">
+			    	    		<li>
+			    	    			<a href="https://new.qq.com/rain/a/20191105A076V600" target="_blank">第二届进博会，亮点有这些</a>
+			    	    		</li>
+			    	    		<br />
+			    	    		<li>
+			    	    			<a href="https://new.qq.com/omn/author/5413195" target="_blank">人民日报评论</a>
+			    	    			<span class="box1">|</span>
+			    	    			<a href="https://new.qq.com/rain/a/20191105A0MLQ100" target="_blank">让教师更好聚焦主业</a>
+			    	    		</li>
+			    	    		<br />
+			    	    		<li>
+			    	    			<a href="" target="_blank">新京报</a>
+			    	    			<span class="box1">|</span>
+			    	    			<a href="https://new.qq.com/rain/a/20191105A0CMOB00" target="_blank"> 悬赏1.8亿求解技术难题，也是为知识"市场估价"</a>
+			    	    		</li>
+			    	    		<br />
+			    	    		<li>
+			    	    			<a href="" target="_blank">棱镜</a>
+			    	    			<span class="box1">|</span>
+			    	    			<a href="" target="_blank">中国最大二手农机村的流量时代</a>
+			    	    		</li>
+			    	    		<br />
+			    	    		<li>
+			    	    			<a href="" target="_blank">深网</a>
+			    	    			<span class="box1">|</span>
+			    	    			<a href="" target="_blank">“老赖”名单上的创业者们值得原谅吗？</a>
+			    	    		</li>
+			    	    		<br />
+			    	    		<li>
+			    	    			<a href="https://new.qq.com/rain/a/20191104A0JCB900" target="_blank">谷雨</a>
+			    	    			<span class="box1">|</span>
+			    	    			<a href="" target="_blank">28岁上海金融女硬核抗癌380天 自救热文获医生点赞</a>
+			    	    		</li>
+			    	    		<br />
+			    	    		<li>
+			    	    			<a href="" target="_blank">腾讯大家</a>
+			    	    			<span class="box1">|</span>
+			    	    			<a href="" target="_blank">田忌赛马的故事，能证明中国人自古不守规则？</a>
+			    	    		</li>
+			    	    	</ul>
+			    	    </div>
+				    </div>
+				</div>
+				<div class="you">
+					<div class="up">
+						<ul>
+							<li>
+								<a href="https://news.qq.com/mobile/" target="_blank">新闻APP</a>
+								<a href="https://sports.qq.com/kbsweb/" target="_blank">体育APP</a>
+								<a href="" target="_blank">企鹅号</a>
+								<a href="" target="_blank">快报</a>
+								<a href="" target="_blank">视频</a>
+							</li>
+							<li>
+								<a href="" target="_blank">微信</a>
+								<a href="" target="_blank">QQ</a>
+								<a href="" target="_blank">空间</a>
+								<a href="" target="_blank">企业微信</a>
+								<a href="" target="_blank">邮箱</a>
+								<a href="" target="_blank">腾讯云</a>
+							</li>
+							<li>
+								<a href="" target="_blank">LOL</a>
+								<a href="" target="_blank">DNF</a>
+							    <a href="" target="_blank">CF</a>
+							    <a href="" target="_blank">王者</a>
+							    <a href="" target="_blank">单机游戏</a>
+							    <a href="" target="_blank">火影OL</a>
+							    <a href="" target="_blank">天刀</a>
+							</li>
+							<li>
+								<a href="" target="_blank">软件</a>
+								<a href="" target="_blank">Q币</a>
+								<a href="" target="_blank">京东</a>
+								<a href="" target="_blank">腾讯地图</a>
+								<a href="" target="_blank">腾讯文档</a>
+								<a href="" target="_blank">理财通</a>
+							</li>
+						</ul>
+					</div>
+					<div class="down"></div>
+				</div>
+			</div>
+			    <div class="clearb"></div>
+			</div>
+			<div class="clearb"></div>
+		</div>
 	</body>
 </html>
