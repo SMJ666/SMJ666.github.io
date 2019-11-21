@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			td{
+				width: 200px;
+				height: 55px;
+				background-color: bisque;
+			}
+			
+			.td1 {
+				width: 200px;
+				height: 55px;
+				background-color: dodgerblue;
+			}
+			.operate{
+				margin-left: 150px;
+			}
+			td a:link{
+				text-decoration: none;
+			}
+			td a:hover{
+				color: #1E90FF;
+			}
+		</style>
+	</head>
+	<body style="text-align: center;">
+		姓名:<input id="name" type="text" />
+		<td>
+			<input type="radio" name="sex"   value="男" id="man" checked="checked">男<input type="radio" name="sex" value="女" id="woman">女</radio>
+		</td>
+		<button onclick="createTr()"  style="width: 150px; height: 30px;" class="operate">操作</button>         
+		<table id="oTa" align="center">
+			<tbody id="oTb">
+				<tr id="tr1">
+					<td class="td1">学号</td>
+					<td class="td1">姓名</td>
+					<td class="td1">性别</td>
+					<td class="td1">操作</td>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td id="xm1">刘洪洋</td>
+					<td>男</td>
+					<td>
+						<a href="javascript:void(0)" id="sc1">删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td id="xm2">周怡萌</td>
+					<td>女</td>
+					<td>
+						<a href="javascript:void(0)" id="sc2">删除</a>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td id="xm3">朱祺</td>
+					<td>男</td>
+					<td>
+						<a href="javascript:void(0)" id="sc3">删除</a>
+					</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<script>
+			document.getElementById("xm3").onmouseover = function() {   
+				document.getElementById("xm3").style.color = "red";
+			}
+			document.getElementById("xm3").onmouseout = function() {   
+				document.getElementById("xm3").style.color = "black";
+			}
+			document.getElementById("sc3").onclick = function() {
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+			document.getElementById("xm2").onmouseover = function() {   
+				document.getElementById("xm2").style.color = "red";
+			}
+			document.getElementById("xm2").onmouseout = function() {   
+				document.getElementById("xm2").style.color = "black";
+			}
+			document.getElementById("sc2").onclick = function() {
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+			document.getElementById("xm1").onmouseover = function() {   
+				document.getElementById("xm1").style.color = "red";
+			}
+			document.getElementById("xm1").onmouseout = function() {   
+				document.getElementById("xm1").style.color = "black";
+			}
+			document.getElementById("sc1").onclick = function() {
+				this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+			}
+		</script>
+		<script>
+			var id = document.getElementById("oTa").tBodies[0].rows.length;
+
+			function createTr() {
+				var tab = document.getElementById("oTb");
+				var  otable = document.getElementById("oTa");
+				var oname = document.getElementById("name");
+				var osex2 = document.getElementById("woman");
+				var osex1 = document.getElementById("man");
+				var osex = document.getElementsByName("sex")
+				var oTr = document.createElement("tr");
+
+				var oTd1 = document.createElement("td");   
+				oTd1.innerHTML = id++;   
+				oTr.appendChild(oTd1);
+				var oTd2 = document.createElement("td");   
+				oTd2.innerHTML = oname.value;   
+				oTr.appendChild(oTd2);   
+				oTd2.onmouseover = function() {            
+					oTd2.style.color = "red";            
+					oTd2.onmouseout = function() {            
+						oTd2.style.color = "black";
+					}
+				}
+				var oTd3 = document.createElement("td");     
+				if(osex[0].checked == true)      oTd3.innerHTML = osex1.value;   
+				if(osex[1].checked == true)      oTd3.innerHTML = osex2.value;          
+				oTr.appendChild(oTd3);   
+				var oTd4 = document.createElement("td");
+				var  oa = document.createElement("a");   
+				var ob = document.createTextNode("删除");   
+				oa.setAttribute("href", "javascript:void(0)");   
+				oa.appendChild(ob);   
+				oTd4.appendChild(oa);   
+				oTr.appendChild(oTd4);    
+				oa.onclick = function() {
+					this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+				}
+				document.getElementById("oTb").appendChild(oTr);
+			}
+		</script>
+	</body>
+</html>
