@@ -22,10 +22,9 @@
 			}
 			nav li a{
 				display: block;
-				width: 290px;
+				width: 270px;
 				height: 60px;
 				color: azure;
-				
 			}
 			nav{
 				margin-left: 45px;
@@ -40,6 +39,20 @@
 			}
 			body{
 				background-color:  #ffffe5;
+				margin: auto;
+			}
+			a:link{
+				text-decoration: none;
+				align-content: center;
+			}
+			iframe{
+				align-content: center;
+			}
+			*{
+				margin: 0 auto;
+			}
+			.address{
+				padding-top:10px ;
 			}
 			.frame{
 				width: 100%;
@@ -50,13 +63,30 @@
 				width: 50px;
 			}
 			.content{
-				width: 1000px;
-				background-color: black;
+				width: 100%;
 			}
 			.left{
-				display:block
-				width: 200px;
-				background-color: #F5F5DC;
+				display:block;
+				width: 28%;
+				background-color: #FFE699;
+				float: left;
+				padding: 1%;
+				height: 500px;
+			}
+			.middle{
+				display: block ;
+				width: 38%;
+				background-color: #FFE6AA;
+				float: left;
+				height: 525px;
+			}
+			.right{
+				display:block;
+				width: 28%;
+				background-color: #FFE699;
+				float: left;
+				padding: 1%;
+				height: 500px;
 			}
 			.logo{
 				margin-left: 50px;
@@ -74,7 +104,7 @@
 				height: 100%;
 			}
 			.head{
-				margin-left: 44px;
+				align-content: center;
 			}
 			.clear{
 				content:"";
@@ -106,6 +136,10 @@
 				line-height: 35px;
 				text-align: left;
 			}
+			.title{
+				padding: 8px;
+				opacity: 0.6;
+			}
 		</style>
 	</head>
 	<body>
@@ -116,37 +150,58 @@
 				    <a href="#"><button type="submit">搜索</button></a>
 				</div>
 		    	<nav class="div">
-		    		<li><a href="#">主页</a></li>
-		    		<li><a href="menu.html">菜单</a></li>
+		    		<li><a href="index.html">主页</a></li>
+		    		<li><a href="menu.html" target="_blank">菜单</a></li>
 		    		<li><a href="官网.html">官网</a></li>
 		    		<li><a href="关于我们.html" target="_blank">关于我们</a></li>
 		    	</nav>
 		    </div>
 	    	<div class="head">
 	    		<div class="clear"></div>
-	    		<iframe src="主页轮播图.html" width="1160px" height="400px" frameborder="no"></iframe>
+	    		<iframe src="主页轮播图.html" width="1200px" height="400px" frameborder="no" ></iframe>
 	    	</div>
 		    <div class="content">
-	    		<div class="left"></div>
-		    	<div class="middle"></div>
-		    	<div class="right"></div>
+	    		<div class="left">
+	    			<h1 align="center"><font face="楷体" color="coral">图片介绍</h1>
+	    		    <h2><font face="楷体" color="#FF4400">图一</font></h2>
+	    		    <h3><font face="楷体" color="#FF4400">&nbsp;&nbsp;&nbsp; 这是我们品牌的商标，采用朱刻篆章的形式，方方正正象征着陕西人的豪爽坦荡，小篆也是秦朝统一时的通用字体，代表着品牌创始人是陕西人。</font></h3>
+	    		    <br />
+	    		    <h2><font face="楷体" color="#FF4400">图二和图三</font></h2>
+	    		    <h3><font face="楷体" color="#FF4400">&nbsp;&nbsp;&nbsp; 是我们推出餐品中的一部分，你，心动了吗？</font></h3>
+	    		    <br />
+	    		    <h2><font face="楷体" color="#FF4400">图四</font></h2>
+	    		    <h3><font face="楷体" color="#FF4400">&nbsp;&nbsp;&nbsp; 我们的招募令，召集那些对我们的餐品有兴趣，无论是想来品尝还是想加入我们的人。</font></h3>
+	    		    <br />
+	    		    <h2><font face="楷体" color="#FF4400">图五</font></h2>
+	    		    <h3><font face="楷体" color="#FF4400">&nbsp;&nbsp;&nbsp; 这是黄土高原的千沟万壑，期待每一个收到我们的招募令的你的到来。</font></h3>
+	    			<div class="clear"></div>
+	    		</div>
+		    	<div class="middle">
+		    		<div class="title">
+		    			<h1 align="center"><font face="楷体" color="coral">企业介绍</h1>
+		    			<h2><font face="楷体" color="#FF4400">&nbsp; &nbsp;  秦香缘是专门从事餐饮制作、服务、配送，承接机关企事业单位、学校食堂管理经营的专业企业。广泛适用于学校、政府及企事业单位、医院等团餐各场景，可以为客户实现从采购、生产、售卖、经营分析等全流程服务管理，助力团餐产业高质量发展。</font></h2>
+		    		    <h1 align="center"><font face="楷体" color="coral">企业宗旨</h1>
+		    		    <h2><font face="楷体" color="#FF4400">&nbsp; &nbsp;  虽然企业由秦人创办，名称也带有“秦”字，但我们的消费人群绝不仅仅只是陕西人，而是所有的湘大人，甚至是更广范围内的人群，希望湘大的陕西学子能在这里感受家的味道，也希望所有的湘大人能够了解陕西美食，进一步感受陕西深厚的文化底蕴，促进地区间文化交流！我就是家乡的代言人！</font>
+		    		</div>
+		    		<div class="clear"></div>	
+		    	</div>
+		    	<div class="right">
+		    		<h1 align="center"><font face="楷体" color="coral">了解我们</h1>
+		    	    <h2><font face="楷体" color="#FF4400">&nbsp; &nbsp;  我们企业取“秦香缘”为品牌的名称富含着深意--“秦人”也就是陕西人有缘因为喷香的食物聚到一起。采用篆章样式作为我们的商标，有浓厚的秦风秦韵。</font></h2>
+		    	</div>
 	    	</div>
-    		<div class="foot">
-				<div class="div1">
-					<a><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp;意见反馈|&nbsp; &nbsp; &nbsp; 
-						&nbsp;联系客服|&nbsp; &nbsp; &nbsp; &nbsp;友情链接|&nbsp; &nbsp; &nbsp; &nbsp;免责声明 |
-					</p></a>
-					<a><p class="p3">&nbsp; &nbsp; &nbsp; &nbsp;关于我们|&nbsp;  &nbsp; &nbsp; 
-						&nbsp;隐私政策|&nbsp; &nbsp; &nbsp; &nbsp;营销中心|&nbsp; &nbsp; &nbsp; &nbsp;合作联系 |
-					</p></a>
-					<br />
-				</div>
-				<div class="div2">
-					<img src="img/二维码.jpg" height="120px" align="left"/>
-					<p class="p3">更多详情请扫描二维码联系公司</p>
-					<p class="p3">如果您对我们企业有意向，可扫码与我们详谈。</p>
-				</div>
-			</div>
+	    	<div class="address">
+	    		<address>
+	    		<p align="center" style="color: darkgrey">
+            		Written by <a href="https://mail.qq.com/">@Jacquline</a>.<br> 
+            		Xiangtan University<br>
+            		China
+        		</p>
+	    	</address>
+	    	</div>
+	    	<address>
+	    		Copyright © 19级网络工程一班 201905555536 宋孟婕 版权所有
+	    	</address>
 		</div>
 	</body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>早餐</title>
+		<style>
+			.breakfast{
+				display: block;
+				float: left;
+				height: 150px;
+				background-color: #FFFFE5;
+				padding: 10px;
+		    }
+		    .lunch{
+				display: block;
+				float: left;
+				height: 150px;
+				background-color: #FFFFE5;
+				padding: 10px;
+		    }
+		    .dinner{
+				display: block;
+				float: left;
+				height: 150px;
+				background-color: #FFFFE5;
+				padding: 10px;
+		    }
+		    .clear:after{
+				content:"";
+				display:block;
+				clear: left;
+			}
+		    #meal{
+		    	padding-top: 70px;
+		    }
+		    #food:hover{
+		    	border: double;
+		    	border-color: #9CC5EF;
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="frame">
+			<div class="shang">
+				<div class="breakfast" id="meal"><font face="楷体" size="5">早餐</font></div>
+				<div class="breakfast">
+					<img src="img/豆花泡馍.jpg" height="150px" id="food"/>
+					<img src="img/菜夹馍.jpg" height="150px" id="food"/>
+				</div> 
+			</div>
+			<br />
+			<br />
+			<div class="clear"></div>
+			<div class="zhong">
+				<div class="lunch"  id="meal"><font face="楷体" size="5">午餐</font></div>
+				<div class="lunch">
+					<img src="img/搅团.jpg" height="150px" id="food"/>
+					<img src="img/羊肉泡馍.jpg" height="150px" id="food" />
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="xia">
+				<div class="dinner" id="meal"><font face="楷体" size="5">晚餐</font></div>
+		    	<div class="dinner">
+		    		<img src="img/3.jpg" height="150px" id="food"/>
+		    		<img src="img/米皮.jpg" height="150px" id="food"/>
+		    	</div>
+			</div>
+		</div>
+	</body>
+</html>

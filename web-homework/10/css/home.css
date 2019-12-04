@@ -21,6 +21,11 @@ a:link{
 	text-decoration: none;
 	
 }
+address{
+	position: absolute;
+	left: 250px;
+	top: 1000px;
+}
 #box{
     height: 48px;
     width: 900px;
@@ -104,4 +109,31 @@ a:link{
 }
 .box{
 	margin-bottom: 0px;
+}
+.foot{
+	width:1000px;
+	height: 180px;
+	align-content: center;
+	}
+.div1{
+	margin: 20px;
+	height: 130px;
+	width: 440px;
+	border: solid 1px;
+	float: left;
+}
+.div2{
+	margin: 20px;
+	width: 430px;
+	height: 130px;
+	border: solid 1px;
+	float: left;
+	padding-top: 8px;
+}
+.p3{
+	line-height: 35px;
+	text-align: left;
+}
+.content{
+	align-content: center;
 }
