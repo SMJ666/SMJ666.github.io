@@ -24,8 +24,8 @@ a:link{
 }
 address{
 	position: absolute;
-	left: 300px;
-	top: 1000px;
+	left: 350px;
+	top: 1050px;
 }
 #box{
     height: 48px;
@@ -57,7 +57,7 @@ address{
 .frame{
 	display: block;
 	width: 940px;
-	height: 560px;
+	height: 580px;
 	background-color: #9CC5EF;
 	margin: 0 auto;
 	padding: 8px;
@@ -65,7 +65,7 @@ address{
 .zuo{
 	display: block;
 	width: 290px;
-	height: 537px;
+	height: 560px;
 	background-color: cornflowerblue;
 	float: left;
 	padding: 8px;
@@ -74,7 +74,7 @@ address{
 .zhong{
 	display: block;
 	width: 290px;
-	height: 537px;
+	height: 560px;
 	background-color: dodgerblue;
 	float: left;
 	margin-left: 8px;
@@ -84,7 +84,7 @@ address{
 .you{
 	display: block;
 	width: 290px;
-	height: 537px;
+	height: 560px;
 	background-color: cornflowerblue;
 	position: relative;
 	float: left;
