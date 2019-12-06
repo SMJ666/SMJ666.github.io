@@ -1,5 +1,6 @@
 ul,li { 
-    padding: 0; margin: 0; 
+    padding: 0;
+    margin: 0; 
 }
 li{ 
     list-style: none; 
@@ -103,9 +104,9 @@ address{
 	margin-bottom: 30px;
 }
 .logo{
-	margin-left: 190px;
+	margin-left: 300px;
 	margin-top: 20px;
-	height: 100px;	
+	height: 10px;	
 }
 .box{
 	margin-bottom: 0px;
