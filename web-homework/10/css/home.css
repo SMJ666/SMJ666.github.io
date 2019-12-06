@@ -24,7 +24,7 @@ a:link{
 }
 address{
 	position: absolute;
-	left: 250px;
+	left: 300px;
 	top: 1000px;
 }
 #box{
@@ -105,8 +105,8 @@ address{
 }
 .logo{
 	margin-left: 300px;
-	margin-top: 20px;
-	height: 10px;	
+	/*margin-top: 20px;*/
+	height: 100px;	
 }
 .box{
 	margin-bottom: 0px;
